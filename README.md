@@ -1,1 +1,3 @@
-# ADA_pages
+# ADA pages
+
+See https://lukasvandenheuvel.github.io/ALAN/
