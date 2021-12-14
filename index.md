@@ -7,7 +7,7 @@ The search for political spectrum, i.e. a set of independent political dimension
 
 
 <div style="text:align: center">
-  <iframe src="pca_opinions.html"></iframe>
+  <iframe src="pca_opinions.html" height="525" width="100%"></iframe>
 </div>
 
 
