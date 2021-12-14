@@ -5,11 +5,17 @@ The search for political spectrum, i.e. a set of independent political dimension
 
 # Add plotly 
 
-{% include pca_opinions.html %}
+<div style="text:align: center">
+  <iframe src="pca_opinions.html"></iframe>
+</div>
+
+
 
 
 <!---
 ### Markdown
+
+{% include pca_opinions.html %}
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://github.com/lukasvandenheuvel/ALAN/blob/gh-pages/assets/images/pca_opinions.html" height="525" width="100%"></iframe>
 
