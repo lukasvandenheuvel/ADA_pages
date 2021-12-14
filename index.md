@@ -5,7 +5,7 @@ The search for political spectrum, i.e. a set of independent political dimension
 
 # Add plotly 
 
-{% include assets/images/pca_opinions.html %}
+{% include pca_opinions.html %}
 
 
 <!---
