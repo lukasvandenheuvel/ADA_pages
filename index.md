@@ -16,9 +16,7 @@ The search for political spectrum, i.e. a set of independent political dimension
 <!---
 ### Markdown
 
-{% include pca_opinions.html %}
-
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://github.com/lukasvandenheuvel/ALAN/blob/gh-pages/assets/images/pca_opinions.html" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://raw.githubusercontent.com/lukasvandenheuvel/ALAN/gh-pages/assets/images/pca_opinions.html" height="525" width="100%"></iframe>
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
