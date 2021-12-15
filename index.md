@@ -1,3 +1,35 @@
+# What guides our political affiliations?
+Ever since the dawn of democracies, political scientists have been searching for the fundamental questions that best define our political beliefs. Do you favour small or big state? Are you progressive or conservative? Authoritarian or liberal? Those were some of the questions traditionally deemed most important. These believes about what questions best characterise the political debate have been also captured graphically on graphs known as "political compasses" which show where different people lie on the questions defined above.
+
+<!--This is a bit shit, replace by better image -->
+![Example of traditional policital compass](https://2.bp.blogspot.com/-mj4BKwVVT0E/UyBQIwfMv3I/AAAAAAAACbs/bClT9FdMPgU/s1600/Social+democracy+2014.png "Example of traditional compass")
+
+Traditionally, the axis on such compasses are along the lines left-right on one and authoritarian/libertarian on the other. But do these axes really accurately define the political divide today when traditional
+<!--Here we could add some example e.g. Conservatives in the UK raising taxes and giving out a lot of welfare when they were always a small-state party; democrats getting support from college-educated americans despite traditionally being a party of the working class (same with labour in the UK); rise of non-traditional parties such as En Marche in France or various parties (northern league, 5* movement) in Italy that have largely replaced the traditionally dominant christian democrats;etc-->
+political affiliations are shifting and traditional sticking points no longer hold? Let's leverage the almost 180 milion quotes available in quotebank to find out! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 See our Milestone 2 submission [here](milestone2.md).
 
 # Introduction  
