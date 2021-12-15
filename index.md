@@ -22,6 +22,7 @@ Having examined the politicians behind the quotes, let's investigate their conte
 To do this, we look at the quotes that BERTTopic finds as best representatives of the topics it found. Amongst the top 10 topics with most quotes, many are uncannily familiar: the most common topic is Hillary Clinton, others among the top 10 include Iran, Womens' Rights, Taxation or Youth.
 
 > We have to tell young people that it does matter, every vote counts!
+> 
 > – <cite> Most representative quote for the "Youth" topic </cite>
 
 [^1]: Due to technical limitations, we used a subset of 600k quotes for the topic extraction and we then use BERTTopic to assign the remaining quotes to these topics. Also, we limited BERTTopic to 1000 topics as when left to its own devices, it would generate over 4000 topics where each topic was extremely narrow and provided little interpretation possibilities.
