@@ -1,1 +1,11 @@
 theme: jekyll-theme-cayman
+title: Recreating the Political Compass with Quotebank
+description: >- # this means to ignore newlines until "baseurl:"
+  Traditionally, political scientists divide politicians along the left-right and liberal-conservative axes.
+  But is this really what defines political affiliations in today's day and age? We leverage the 178M quotations available in Quotebank to find out!
+# baseurl: "/" # the subpath of your site, e.g. /blog
+# url: "https://who-owns-lausanne.github.io/"
+# github_username:  who-owns-lausanne
+
+# # Build settings
+# markdown: kramdown
