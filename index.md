@@ -25,4 +25,25 @@ To do this, we look at the quotes that BERTTopic finds as best representatives o
 > 
 > – <cite> Most representative quote for the "Youth" topic </cite>
 
+These topics are the ones which are most talked about, but are they also most divisive? Let's find out!
+
+#### Divisive Topics
+To analyze which topics divide politicians, we first need to get their sentiment towards each topic. For example, do they feel positive or negative towards Hillary Clinton or Womens' Rights? To do this, we used Vader, a tool which assigns a number from -1 (negative sentiment) through 0 (neutral sentiment) to 1 (positive sentiment) to each individual quote. This allowed us to get the sentiment of each politician for each topic [^2].
+
+Then, we focused on the republican/democratic divide. On which topics do their sentiments differ the most? 
+
+![Most divisive topics are transitory culture-war issues](https://via.placeholder.com/800x300?text=Placeholder+Image "Most divisive topics")
+
+The analysis shows that most divisive topics are in fact not topics of long-term vision for the country but rather those relating to transient issues that we could label as part of "culture wars" – they are related to particular people who polarized the public debate such as Mike Pompeo and Mike Pence or former FBI director Jim Comey. Interestingly, a topic about former president Donald Trump is not present. The only long-term topic out of the most divisive ones is the 'Rejection of Paris accord' which unsurprisingly triggered positive sentiments from republicans. Another interesting finding is that 2 out of the top 10 most divisive topics are Trump-appointed Supreme Court Justices, Kavanaugh and Gorsuch, showing the politicization of the Supreme Court which has become a powerful player in a country with blocked legislature.
+<!--{'920': 'Mike Pompeo','380': 'Mike Pence','558': 'Judge Neil Gorsuch','680': 'John Bolton','143': 'Kavanaugh family','208': 'FBI and Jim Comey','360': 'FISC, Adam Schiff','566': 'Rejection of Paris accord','615': 'Marco Rubio','841': 'Pittsburgh shooting'}-->
+
+
+# Key Takeaways
+- Few politicians completely dominate the public debate – **silent majority** phenomenom does exist!
+- Topics politicians most talk about are not the ones where they most disagree – contrary to popular opinion, they agree on many issues!
+- Topics that most divide politicians are mostly "culture wars" ephemeral topics that have little to do with a greater vision for the country.
+- 
+
 [^1]: Due to technical limitations, we used a subset of 600k quotes for the topic extraction and we then use BERTTopic to assign the remaining quotes to these topics. Also, we limited BERTTopic to 1000 topics as when left to its own devices, it would generate over 4000 topics where each topic was extremely narrow and provided little interpretation possibilities.
+
+[^2]: In particular, we did this as follows: first we assigned a sentiment to all the quotes. Then, for each politician, we averaged the sentiment of their quotes to each topic. We then removed politicians with less than 1000 quotes as a lower number than that did not give us sufficient representation of their opinions. If politicians did not express an opinion towards a topic, we left their sentiment as NaN, eventually replacing it with 0 for some further processing.
