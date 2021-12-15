@@ -44,7 +44,9 @@ Our analyses of 1000 topics yielded interesting results, but clearly having 1000
 - Few politicians completely dominate the public debate – **silent majority** phenomenom does exist!
 - Topics politicians most talk about are not the ones where they most disagree – contrary to popular opinion, they agree on many issues!
 - Topics that most divide politicians are mostly "culture wars" ephemeral topics that have little to do with a greater vision for the country.
-- 
+
+
+--- 
 
 [^1]: Due to technical limitations, we used a subset of 600k quotes for the topic extraction and we then use BERTTopic to assign the remaining quotes to these topics. Also, we limited BERTTopic to 1000 topics as when left to its own devices, it would generate over 4000 topics where each topic was extremely narrow and provided little interpretation possibilities.
 
