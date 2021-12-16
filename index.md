@@ -1,17 +1,20 @@
 # What guides our political affiliations?
 
-Ever since the dawn of democracies, political scientists have been searching for the fundamental questions that best define our political beliefs. Do you favour small or big state? Are you progressive or conservative? Authoritarian or liberal? Those were some of the questions traditionally deemed most important. These believes about what questions best characterise the political debate have been also captured graphically on graphs known as "political compasses" which show where different people lie on the questions defined above.
+Ever since the dawn of democracies, political scientists have been searching for the fundamental axes that best define our political beliefs. Are you progressive or conservative? Authoritarian or liberal? Do you favour small or big government? In order to represent such divisions, graphical representations known as "political compasses" have been created, which show where different people lie according to a set of questions that are believed to best characterise the political debate and capture the orientation of an individual.
 
-<!--This is a bit shit, replace by better image -->
-![Example of traditional policital compass](https://2.bp.blogspot.com/-mj4BKwVVT0E/UyBQIwfMv3I/AAAAAAAACbs/bClT9FdMPgU/s1600/Social+democracy+2014.png "Example of traditional compass")
+<!--This is a bit shit, replace by better image 
+![Example of traditional policital compass](https://2.bp.blogspot.com/-mj4BKwVVT0E/UyBQIwfMv3I/AAAAAAAACbs/bClT9FdMPgU/s1600/Social+democracy+2014.png "Example of traditional compass")-->
+![Example of traditional policital compass](images/compass_famous.png "Example of traditional compass")
+<sub> © PACE NEWS LTD 2021 </sub>
 
-Traditionally, the axis on such compasses are along the lines left-right on one and authoritarian/libertarian on the other. But do these axes really accurately define the political divide today when traditional
+Traditionally, all these compasses are built using 2 axis: a horizontal left-right econonomic scale, and a vertical authoritarian-libertarian social scale. But do these axes really define accurately the political divide of today, when political affiliations are shifting and traditional sticking points no longer hold?
+
+To find it out, we analyze [Quotebank](https://zenodo.org/record/4277311), a dataset of ~180 milion quotations extracted from english news articles published between 2008 and 2020. Let's begin our journey!
 <!--Here we could add some example e.g. Conservatives in the UK raising taxes and giving out a lot of welfare when they were always a small-state party; democrats getting support from college-educated americans despite traditionally being a party of the working class (same with labour in the UK); rise of non-traditional parties such as En Marche in France or various parties (northern league, 5* movement) in Italy that have largely replaced the traditionally dominant christian democrats;etc-->
-political affiliations are shifting and traditional sticking points no longer hold? Let's leverage the almost 180 milion quotes available in quotebank to find out!
 
 ## What dominates the political debate?
 
-Let's start our analysis with extracting only Americans' politicians' quotes from our quote database. We decided to focus only on the US to reduce the impact of local, country-specific topics. After filtering with said criteria, we are left with 9.5 million quotes from 14 thousand politicians <!--Maybe add a comment about why 14k is ok because it sounds like a LOT-->. Let's now have a look at what it is that these politicians talk about – but before we do, let's see who they are!
+For simplicity, we decided to focus only on quotes attributed to alive American politicians, published between 2015 and 2020. We decided to focus only on the US to reduce the impact of local, country-specific topics, and to have a well-known framework of investigation as the US political system is. After filtering with said criteria, we are left with 9.5 million quotes from 14'000 different speakers. <!--Maybe add a comment about why 14k is ok because it sounds like a LOT--> Let's now have a look at what it is that these politicians talk about – but before we do, let's see who they are!
 
 ### The Silent Majority
 
