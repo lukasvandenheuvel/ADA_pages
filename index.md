@@ -1,5 +1,11 @@
 # What guides our political affiliations?
 
+<!--
+> OOOOOOHHHH YEAAAAHHH BOY LET'S GOOO!!
+>
+> – <cite> Vince McMahon </cite>
+-->
+
 Ever since the dawn of democracies, political scientists have been searching for the fundamental axes that best define our political beliefs. Are you progressive or conservative? Authoritarian or liberal? Do you favour small or big government? In order to represent such divisions, graphical representations known as "political compasses" have been created, which show where different people lie according to a set of questions that are believed to best characterise the political debate and capture the orientation of an individual.
 
 <!--This is a bit shit, replace by better image 
@@ -24,9 +30,11 @@ Looking at the politicians with the most quotes, we can see evidence of what sta
 
 ### Dominant Topics
 
-Having examined the politicians behind the quotes, let's investigate their content. To do this, we use a tool called BERTTopic to extract the topics that best characterise the quotes, which leads us to the top 1000 most significant topics [^1]. Of course, 1000 topics is a bit too many to interpret and to create a political compass, we will need to reduce this down further. But before we do, let's get some idea about what the most significant topics are!
+Having examined the politicians behind the quotes, let's now investigate their content. To do so we use a tool called [BERTopic](https://maartengr.github.io/BERTopic/index.html), which allows us to learn and extract the topics that best characterise our quotes, leading us to the top 1000 significant topics [^1]. Of course, 1000 topics is a bit too many to interpret and to create a political compass, so we will need to reduce this down further. Before we do, let's get some insights about what the most significant topics are!
 
-To do this, we look at the quotes that BERTTopic finds as best representatives of the topics it found. Amongst the top 10 topics with most quotes, many are uncannily familiar: the most common topic is Hillary Clinton, others among the top 10 include Iran, Womens' Rights, Taxation or Youth.
+<!-- some kind of plot? -->
+
+<!--To do this, we look at the quotes that BERTopic finds as best representatives of the topics it found.--> Amongst the 10 topics with most quotes, many are uncannily familiar: Hillary Clinton, Iran, Womens' Rights, Taxation or Youth.
 
 > We have to tell young people that it does matter, every vote counts!
 >
@@ -57,7 +65,7 @@ Our analyses of 1000 topics yielded interesting results, but clearly having 1000
 
 ---
 
-[^1]: Due to technical limitations, we used a subset of 600k quotes for the topic extraction and we then use BERTTopic to assign the remaining quotes to these topics. Also, we limited BERTTopic to 1000 topics as when left to its own devices, it would generate over 4000 topics where each topic was extremely narrow and provided little interpretation possibilities.
+[^1]: Due to technical limitations, we used only a subset of 600k quotes for learning the topics, assigning then a topic to the remaining quotes with the fitted model. Also, BERTopic initially extracted more than 3000 topics, where each topic was extremely narrow and provided little interpretation possibilities. Hence, the topics were later hierarchically merged to reduce them to the 1000 we employed in the rest of the analysis.
 
 [^2]: In particular, we did this as follows: first we assigned a sentiment to all the quotes. Then, for each politician, we averaged the sentiment of their quotes to each topic. We then removed politicians with less than 1000 quotes as a lower number than that did not give us sufficient representation of their opinions. If politicians did not express an opinion towards a topic, we left their sentiment as NaN, eventually replacing it with 0 for some further processing.
 
