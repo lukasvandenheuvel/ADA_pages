@@ -53,19 +53,42 @@ Then, we focused on the republican/democratic divide. On which topics do their s
 The analysis shows that most divisive topics are in fact not topics of long-term vision for the country but rather those relating to transient issues that we could label as part of "culture wars" – they are related to particular people who polarized the public debate such as Mike Pompeo and Mike Pence or former FBI director Jim Comey. Interestingly, a topic about former president Donald Trump is not present. The only long-term topic out of the most divisive ones is the 'Rejection of Paris accord' which unsurprisingly triggered positive sentiments from republicans. Another interesting finding is that 2 out of the top 10 most divisive topics are Trump-appointed Supreme Court Justices, Kavanaugh and Gorsuch, showing the politicization of the Supreme Court which has become a powerful player in a country with blocked legislature.
 <!--{'920': 'Mike Pompeo','380': 'Mike Pence','558': 'Judge Neil Gorsuch','680': 'John Bolton','143': 'Kavanaugh family','208': 'FBI and Jim Comey','360': 'FISC, Adam Schiff','566': 'Rejection of Paris accord','615': 'Marco Rubio','841': 'Pittsburgh shooting'}-->
 
-## New Political Compass
+# New Political Compass
+Our analyses of 1000 topics yielded interesting results, but clearly having 1000 topics is not exactly practical for a political compass! That is why as the next step, we extracted the most important axes of division which consist of a combination of the above topics that best describes the divide between democrats and republicans [^3].
 
-Our analyses of 1000 topics yielded interesting results, but clearly having 1000 topics is not exactly practical for a political compass! That is why as the next step, we extracted the 3 most important axes of division which consist of a combination of the above topics that best describes the divide between democrats and republicans [^3].
+#### 3 Axes Is All You Need
+First, we tried to reduce the number of axes to two to compare our compass to the original political compass. However, we found out two axes were far from sufficient to split the politicians. People standing on completely opposite grounds of the political debate such as former presidents Trump and Obama ended up being clustered close together in one large ball of politicians.
 
-## Key Takeaways
+Adding a third axes led to a vast improvement in results. Suddenly, we can see a clear difference between republicans and democrats with radicals of both parties such as President Trump or Alexandria Ocasio Cortez appearing on the extremes as outliers while centrists such as Virginia Senator <!---TODO: CHeck he is virginia!! --> Joe Manchin being much more in the middle of the overall distribution of political opinions. While this is in no way conclusive, the result of addition of a third axis supports our original hypothesis that just dividing politicians among two lines is far from sufficient to capture even a simplified version of the complexity of contemporary political divide. 
 
+#### Offense, player, and Starbucks?
+
+Having identified the 3 axes that best divide the american political scene and found out that they work surprisingly well and preserve many semantics of the real political divide (e.g. republicans and democrats divide being clearly visible, moderates being closer to each other while radicals being further apart, etc), you are now surely as keen as we are to explore what the meaning of the axes is! Let's check it out!
+
+Closer inspection gives a clear indication on some axes but not on others. Let's consider them in order of interpretability: the 3rd axes, the one that truly achieves separation of political axes contains an all too familiar topic – gun control. This is the number one most important topic closely followed by topics to do with policing such as "law enforcement" or "police officers". Interestingly, attitude towards speaker of the house Paul Ryan also seems to be strongly included which might be because of his view on the above topics. Overall, we suppose this axis could be labelled the **law and order axis** – do politicians believe that people should have the right to defend themselves? Should the police be a repressive force punishing wrongdoings or rather a progressive force fighting for social good?
+
+The first axes could perhaps be best described as the **authoritativeness** axes, interestingly in correspondence with the traditional political compass. Topics here include mostly attitudes towards positions of power, number one topics concerns presidents (both american and chinese), others include governors, or sanctuary cities (municipalities that have special policies in place to deliberately limit their cooperation with federal immigration agencies).
+
+> President, Guns, Safety, Sanctuary, Governor
+> 
+> – <cite> Five most representative topics for Axis 1 </cite>
+
+Finally, the second axis is the toughest nut to crack. The top words best characterizing the top 5 topics that best define this axis are "offense", "player", "buildings", "right history" and "starbucks". Despite a thorough analysis, we have not been able to find a meaningful interpretation of this axis: who would have though attitudes to sports and starbucks are such a powerful determinant of standing in american politics!
+
+> Offense, Player, Buildings, Right History, Starbucks
+> 
+> – <cite> Five most representative topics for Axis 2 </cite>
+
+All in all, we have to admit the interpretation of the axes seems more of an art than science. One is completely uninterpretable and the other two have both contain gun control as one of the most significant topics. On the bright side, these axes do separate politicians extremely well so in some sense they do show the real world as it is – but perhaps just like the real world, we do not fully understand them yet. That said, they do clearly highlight the role of gun control, law enforcement and relation to political authorities as some of the most divisive topics of US politics in 2021 with other traditional themes such as economy and taxation nowhere in sight.
+
+# 5 Key Takeaways
 - Few politicians completely dominate the public debate – **silent majority** phenomenom does exist!
 - Topics politicians most talk about are not the ones where they most disagree – contrary to popular opinion, they agree on many issues!
 - Topics that most divide politicians are mostly "culture wars" ephemeral topics that have little to do with a greater vision for the country.
+- Most significant axes of todays political division are not clearly interpretable, but they show a clear dominance of topics to do with gun control or law enforcement. The **authoritativeness* axes seems alive and well!
+- On the other hand, the traditional **left-right divide** seems dead. Topics that shaped the political debate of the Global North such as government subsidies, taxation, or unions are nowhere to be found.
 
----
-
-[^1]: Due to technical limitations, we used only a subset of 600k quotes for learning the topics, assigning then a topic to the remaining quotes with the fitted model. Also, BERTopic initially extracted more than 3000 topics, where each topic was extremely narrow and provided little interpretation possibilities. Hence, the topics were later hierarchically merged to reduce them to the 1000 we employed in the rest of the analysis.
+[^1]: Due to technical limitations, we used a subset of 600k quotes for the topic extraction and we then use BERTTopic to assign the remaining quotes to these topics. Also, we limited BERTTopic to 1000 topics as when left to its own devices, it would generate over 4000 topics where each topic was extremely narrow and provided little interpretation possibilities.
 
 [^2]: In particular, we did this as follows: first we assigned a sentiment to all the quotes. Then, for each politician, we averaged the sentiment of their quotes to each topic. We then removed politicians with less than 1000 quotes as a lower number than that did not give us sufficient representation of their opinions. If politicians did not express an opinion towards a topic, we left their sentiment as NaN, eventually replacing it with 0 for some further processing.
 
